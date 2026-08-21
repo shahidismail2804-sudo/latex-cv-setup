@@ -8,43 +8,32 @@ This project allows you to:
 - Set up the required software
 - Edit your CV in `main.tex`
 - Automatically generate a PDF when you save the LaTeX file
-- Open and download the generated PDF from your project folder
-- Maintain your CV using Git and GitHub
+- Open and use the generated PDF
+- Maintain the project using Git and GitHub
 
 ---
 
-# 1. Project Overview
+## 2. Choose Your Workflow
 
-This project is designed to make creating and maintaining a LaTeX CV simple.
+You can use this project in two ways.
+## 2. Choose Your Workflow
 
-The basic workflow is:
+You can use this project in two ways:
 
-```text
-GitHub Repository
-       |
-       v
-Clone Project
-       |
-       v
-Run setup.ps1
-       |
-       v
-Check Required Software
-       |
-       v
-Open Project in VS Code
-       |
-       v
-Edit main.tex
-       |
-       v
-Save (Ctrl + S)
-       |
-       v
-LaTeX Workshop Automatically Compiles
-       |
-       v
-main.pdf Generated
-       |
-       v
-Open / Download PDF
+┌──────────────────────────────┬────────────────────────────────────┐
+│ PROGRAMMER WORKFLOW          │ BEGINNER WORKFLOW                  │    
+├──────────────────────────────┼────────────────────────────────────┤
+│ 1. Clone using Git.          │ 1. Get the project from GitHub.    │
+│ 2. Open in VS Code.          │ 2. Open the folder in VS Code.     │
+│ 3. Run setup.ps1.            │ 3. Run setup.ps1.                  │
+│ 4. Check dependencies.       │ 4. Make sure required software     │
+│                              │    is installed.                   │
+│ 5. Edit main.tex.            │ 5. Open main.tex.                  │
+│ 6. Modify CV fields.         │ 6. Replace sample details with     │
+│                              │    your own information.           │
+│ 7. Save with Ctrl + S.       │ 7. Press Ctrl + S.                 │
+│ 8. Automatic compilation.    │ 8. Wait for the PDF to generate.   │
+│ 9. Check main.pdf.           │ 9. Open main.pdf.                  │
+│ 10. Commit changes.          │ 10. Your CV is ready!              │
+│ 11. Push to GitHub.          │ Optional: Save changes to GitHub.  │
+└──────────────────────────────┴────────────────────────────────────┘
