@@ -1,8 +1,8 @@
 {
     "latex-workshop.latex.tools": [
         {
-            "name": "pdflatex",
-            "command": "pdflatex",
+            "name": "xelatex",
+            "command": "xelatex",
             "args": [
                 "-synctex=1",
                 "-interaction=nonstopmode",
@@ -14,14 +14,14 @@
 
     "latex-workshop.latex.recipes": [
         {
-            "name": "pdflatex",
+            "name": "xelatex",
             "tools": [
-                "pdflatex"
+                "xelatex"
             ]
         }
     ],
 
-    "latex-workshop.latex.recipe.default": "pdflatex",
+    "latex-workshop.latex.recipe.default": "xelatex",
 
     "latex-workshop.latex.autoBuild.run": "onSave",
 

@@ -3,53 +3,53 @@
 % =========================================================
 % PACKAGES
 % =========================================================
-
-\usepackage[
-    top=0.55in,
-    bottom=0.55in,
-    left=0.65in,
-    right=0.65in
-]{geometry}
-
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[margin=0.70in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
 \usepackage{tabularx}
-\usepackage{xcolor}
+\usepackage{array}
 
 % =========================================================
-% DOCUMENT SETTINGS
+% HYPERLINK SETUP
 % =========================================================
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0}
+}
 
+% =========================================================
+% PAGE SETUP
+% =========================================================
 \pagestyle{empty}
+
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
-\setlist[itemize]{
-    leftmargin=1.2em,
-    itemsep=1pt,
-    topsep=2pt,
-    parsep=0pt,
-    partopsep=0pt
-}
-
-% Section formatting
+% =========================================================
+% SECTION FORMAT
+% =========================================================
 \titleformat{\section}
-    {\large\bfseries}
-    {}
-    {0pt}
-    {}
-    [\titlerule]
+  {\large\bfseries}
+  {}{0em}
+  {}[\vspace{2pt}\hrule height 0.6pt]
 
 \titlespacing*{\section}
-    {0pt}
-    {7pt}
-    {4pt}
+  {0pt}
+  {9pt}
+  {5pt}
+
+% =========================================================
+% TABLE COLUMN SETUP
+% =========================================================
+\newlength{\datecolwidth}
+\setlength{\datecolwidth}{1.35in}
 
 % =========================================================
 % DOCUMENT
 % =========================================================
-
 \begin{document}
 
 % =========================================================
@@ -58,76 +58,101 @@
 
 \begin{center}
 
-    {\LARGE \textbf{Shahid Ismail}}
-
-    \vspace{3pt}
-
-    {\normalsize
-    Electronics and Communication Engineering Student
-    }
+    {\LARGE\bfseries Shahid Ismail S}
 
     \vspace{4pt}
 
-    \href{mailto:your.email@example.com}{your.email@example.com}
-    \quad | \quad
-    +91 XXXXX XXXXX
-    \quad | \quad
-    \href{https://linkedin.com/in/yourprofile}
-    {linkedin.com/in/yourprofile}
+    +91 9679571010
+    \quad $\cdot$ \quad
+    \href{mailto:sahidsr2004@gmail.com}{sahidsr2004@gmail.com}
 
 \end{center}
 
+\vspace{2pt}
+
 % =========================================================
-% PROFILE
+% CAREER OBJECTIVE
 % =========================================================
 
-\section*{Profile}
+\section*{Career Objective}
 
-Final-year Electronics and Communication Engineering student with
-hands-on experience in embedded systems, ESP32 development,
-communication protocols, and hardware-software integration. Interested
-in Embedded Systems, IoT, Embedded AI, and Cyber-Physical Systems,
-with practical experience developing ESP32-based projects and exposure
-to industrial operations.
+Passionate Electronics and Communication Engineering undergraduate with
+hands-on experience in embedded systems, IoT, and AI-based solutions.
+Seeking an opportunity to apply my skills in ESP32 development, sensor
+integration, and innovative prototyping to solve real-world engineering
+challenges while contributing effectively to a dynamic team.
 
 % =========================================================
 % EDUCATION
 % =========================================================
 
-\section*{Education}
+\section*{Educational Qualification}
 
-\begin{tabularx}{\textwidth}{X r}
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}p{\datecolwidth}
+    @{\hspace{1em}}
+    >{\raggedright\arraybackslash}X
+    @{}
+}
 
-\textbf{Kalasalingam Academy of Research and Education}
+Nov 2022 -- May 2026
 &
-\textbf{CGPA: 7.75/10}
+\textbf{Bachelors in Electronics Communication and Engineering}
+\hfill
+\textbf{Virudhunagar}
 \\
-
-B.Tech in Electronics and Communication Engineering
 &
-India
+Kalasalingam Academy of Research and Education
+\\[5pt]
+
+Jun 2021 -- Apr 2022
+&
+\textbf{Higher Secondary Certificate}
+\hfill
+\textbf{Port Blair}
 \\
+&
+Ummat Public School
+\\[5pt]
+
+Jun 2019 -- Apr 2020
+&
+\textbf{Secondary School Leaving Certificate}
+\hfill
+\textbf{Port Blair}
+\\
+&
+Ummat Public School
 
 \end{tabularx}
 
 % =========================================================
-% TECHNICAL SKILLS
+% INTERNSHIP
 % =========================================================
 
-\section*{Technical Skills}
+\section*{Internship}
 
-\textbf{Programming:}
-C, Embedded C, Python, Verilog
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}p{\datecolwidth}
+    @{\hspace{1em}}
+    >{\raggedright\arraybackslash}X
+    @{}
+}
 
-\hspace{4pt}
+Jan 2026 -- Mar 2026
+&
+\textbf{ZF CVCS Production Trainee, Mahindra City}
+\hfill
+\textbf{Chennai}
+\\
+&
+Assisted in shop floor operations by analyzing production issues,
+supporting process control and maintenance activities, and ensuring
+adherence to quality, safety, and regulatory standards.
 
-\textbf{Embedded Systems:} 
-ESP32, Microcontrollers, UART, I2C, SPI, Bluetooth Low Energy (BLE)
-
-\hspace{4pt}
-
-\textbf{Software \& Tools:}
-MATLAB, Multisim, Linux, Flutter, Firebase
+\end{tabularx}
 
 % =========================================================
 % PROJECTS
@@ -135,82 +160,114 @@ MATLAB, Multisim, Linux, Flutter, Firebase
 
 \section*{Projects}
 
-\textbf{Safe Sight -- AI-Powered Home Security System}
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}p{\datecolwidth}
+    @{\hspace{1em}}
+    >{\raggedright\arraybackslash}X
+    @{}
+}
 
-\begin{itemize}
+Nov 2025 -- Dec 2025
+&
+\textbf{Smart Wheelchair Tracking System}
+\\
+&
+Capstone project focused on smart wheelchair tracking.
+Developed a BLE-based indoor wheelchair tracking system using
+ESP32 microcontrollers. Implemented RSSI-based distance estimation
+with BLE beacons for accurate real-time location monitoring.
+Integrated a Flutter application with Firebase backend.
+\\[7pt]
 
-    \item Developed an ESP32-CAM based home security system focused on
-    improving safety and accessibility for visually impaired users.
+Nov 2024 -- Dec 2024
+&
+\textbf{Safe Sight}
+\\
+&
+AI-powered home security system tailored for visually impaired
+individuals. Developed a smart home security solution integrating
+ESP32-CAM, motion detection sensors, and voice alert systems to
+provide real-time safety notifications.
+\\[7pt]
 
-    \item Integrated camera-based monitoring with embedded hardware to
-    support real-time security applications.
+Apr 2025 -- May 2025
+&
+\textbf{Biocomposite 3D Printing Filament}
+\\
+&
+Created sustainable 3D printing filament using banana peduncle
+fiber combined with PLA. Implemented eco-friendly material
+processing and conducted testing to address sustainability
+challenges in additive manufacturing.
 
-\end{itemize}
-
-
-\textbf{BLE-Based Smart Wheelchair Tracking System}
-
-\begin{itemize}
-
-    \item Developed an ESP32 and Bluetooth Low Energy based wheelchair
-    tracking system using RSSI for location estimation.
-
-    \item Integrated Flutter and Firebase for application-level
-    monitoring, data management, and communication with the embedded
-    system.
-
-\end{itemize}
-
-
-\textbf{Banana Fiber + P L A Biocomposite Filament}
-
-\begin{itemize}
-
-    \item Developed a banana-fiber reinforced PLA biocomposite filament
-    for sustainable 3D printing applications.
-
-    \item Investigated natural-fiber reinforcement as an approach toward
-    sustainable additive manufacturing.
-
-\end{itemize}
-
-% =========================================================
-% INDUSTRIAL EXPERIENCE
-% =========================================================
-
-\section*{Industrial Experience}
-
-\textbf{Z F}   \hfill Apprenticeship
-
-\begin{itemize}
-
-    \item Gained practical industrial exposure through hands-on
-    experience with machine operations and manufacturing processes.
-
-\end{itemize}
+\end{tabularx}
 
 % =========================================================
-% RESEARCH
+% KEY ACHIEVEMENTS
 % =========================================================
 
-\section*{Research}
+\section*{Key Achievements}
 
-\textbf{ICECAA 2025}
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}p{\datecolwidth}
+    @{\hspace{1em}}
+    >{\raggedright\arraybackslash}X
+    @{}
+}
 
-\begin{itemize}
+Mar 2025
+&
+\textbf{ICECAA 2025} -- Presented research paper titled
+``Smart Wheelchair Monitoring: Location and Occupancy Detection
+for Improved Hospital Access'' at the 3rd International Conference
+on Edge Computing and Applications.
+\\[5pt]
 
-    \item Presented a research paper at ICECAA 2025.
+Mar 2024
+&
+Achieved \textbf{3rd Place} in FRAMES '24 technical competition.
 
-\end{itemize}
+\end{tabularx}
 
 % =========================================================
-% ACTIVITIES
+% SKILLS
 % =========================================================
 
-\section*{Activities}
+\section*{Skills}
 
-\textbf{Hackathons}
-\quad | \quad
-\textbf{University Boxing}
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}p{\datecolwidth}
+    @{\hspace{1em}}
+    >{\raggedright\arraybackslash}X
+    @{}
+}
+
+\textbf{Technical Skills}
+&
+IoT, Embedded C, PCB Design, I2C, Multisim, Verilog, UART,
+3D Printing, EDA, BLE
+\\[4pt]
+
+\textbf{Soft Skills}
+&
+Leadership and Teamwork, Communication, Public Speaking,
+Optimistic, Adaptable
+
+\end{tabularx}
+
+% =========================================================
+% LANGUAGES
+% =========================================================
+
+\section*{Languages Known}
+
+English, Hindi, Tamil
+
+% =========================================================
+% END
+% =========================================================
 
 \end{document}
