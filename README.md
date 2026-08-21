@@ -11,27 +11,20 @@ This project allows you to:
 - Open and use the generated PDF
 - Maintain the project using Git and GitHub
 
----
-
-## 2. Choose Your Workflow
-
-You can use this project in two ways.
-## 2. Choose Your Workflow
-
 ## 2. Choose Your Workflow
 
 You can use this project in two ways:
 
-| 👨‍💻 **PROGRAMMER WORKFLOW** | 🧑‍💻 **BEGINNER / NOOB WORKFLOW** |
+| PROGRAMMER WORKFLOW | BEGINNER WORKFLOW |
 |---|---|
-| **1. Clone the repository using Git.** | **1. Get the project from GitHub.** Download or clone it to your computer. |
-| **2. Open the project using VS Code.** | **2. Open the project folder in VS Code.** |
-| **3. Run `.\setup.ps1` from PowerShell.** | **3. Open PowerShell in the project folder and run `.\setup.ps1`.** |
-| **4. Check that MiKTeX and LaTeX Workshop are installed.** | **4. Make sure MiKTeX and the LaTeX Workshop extension are installed.** |
-| **5. Edit `main.tex`.** | **5. Open `main.tex`.** This is where your CV information is written. |
-| **6. Change the required CV information.** | **6. Replace the sample information with your own name, education, projects, skills, contact details, etc.** |
-| **7. Press `Ctrl + S`.** | **7. Press `Ctrl + S` to save your CV.** |
-| **8. LaTeX Workshop automatically builds the CV.** | **8. Wait a few seconds while VS Code creates the PDF automatically.** |
-| **9. Check the generated `main.pdf`.** | **9. Find `main.pdf` in the project folder and open it.** |
-| **10. Commit your changes using Git.** | **10. Your CV is ready to use or share.** |
-| **11. Push your changes to GitHub.** | **Optional:** If you want to save your changes online, commit and push them to GitHub. |
+| 1. Clone using Git. | 1. Get the project from GitHub. |
+| 2. Open in VS Code. | 2. Open the folder in VS Code. |
+| 3. Run `setup.ps1`. | 3. Run `setup.ps1`. |
+| 4. Check dependencies. | 4. Make sure required software is installed. |
+| 5. Edit `main.tex`. | 5. Open `main.tex`. |
+| 6. Modify CV fields. | 6. Replace sample details with your own information. |
+| 7. Save with `Ctrl + S`. | 7. Press `Ctrl + S`. |
+| 8. Automatic compilation. | 8. Wait for the PDF to generate. |
+| 9. Check `main.pdf`. | 9. Open `main.pdf`. |
+| 10. Commit changes. | 10. Your CV is ready! |
+| 11. Push to GitHub. | **Optional:** Save changes to GitHub. |
