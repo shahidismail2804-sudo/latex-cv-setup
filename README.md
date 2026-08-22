@@ -19,7 +19,7 @@ You can use this project in two ways:
 |---|---|
 | 1. Clone using Git. | 1. Get the project from GitHub. |
 | 2. Open in VS Code. | 2. Open the folder in VS Code. |
-| 3. Run `setup.ps1`. | 3. Run `setup.ps1`. |
+| 3. Run `setup.ps1` in PowerShell. | 3. Open PowerShell and run `setup.ps1`. |
 | 4. Check dependencies. | 4. Make sure required software is installed. |
 | 5. Edit `main.tex`. | 5. Open `main.tex`. |
 | 6. Modify CV fields. | 6. Replace sample details with your own information. |
