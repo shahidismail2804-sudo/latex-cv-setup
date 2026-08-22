@@ -25,6 +25,7 @@ You can use this project in two ways:
 | 6. Modify CV fields. | 6. Replace sample details with your own information. |
 | 7. Save with `Ctrl + S`. | 7. Press `Ctrl + S`. |
 | 8. Automatic compilation. | 8. Wait for the PDF to generate. |
-| 9. Check `main.pdf`. | 9. Open `main.pdf`. |
-| 10. Commit changes. | 10. Your CV is ready! |
-| 11. Push to GitHub. | **Optional:** Save changes to GitHub. |
+| 9. Restart VS Code if the PDF does not update automatically. | 9. Restart VS Code if the PDF does not update automatically. |
+| 10. Check `main.pdf`. | 10. Open `main.pdf`. |
+| 11. Commit changes. | 11. Your CV is ready! |
+| 12. Push to GitHub. | **Optional:** Save changes to GitHub. |
