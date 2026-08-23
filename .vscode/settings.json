@@ -25,7 +25,11 @@
 
     "latex-workshop.latex.autoBuild.run": "onSave",
 
+    "latex-workshop.latex.autoBuild.interval": 0,
+
     "latex-workshop.view.pdf.viewer": "tab",
+
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
 
     "latex-workshop.latex.clean.fileTypes": [
         "*.aux",
