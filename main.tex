@@ -3,272 +3,559 @@
 % =========================================================
 % PACKAGES
 % =========================================================
-\usepackage[margin=0.70in]{geometry}
+
+\usepackage[margin=0.55in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage{hyperref}
+\usepackage[plainpages=false,pdfpagelabels]{hyperref}
 \usepackage{tabularx}
 \usepackage{array}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage{amssymb}
 
 % =========================================================
-% HYPERLINK SETUP
+% PAGE SETTINGS
 % =========================================================
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\raggedbottom
+\emergencystretch=3em
+
+% Suppress harmless box warnings
+\hfuzz=100pt
+\hbadness=10000
+
+% =========================================================
+% HYPERLINK SETTINGS
+% =========================================================
+
 \hypersetup{
-    colorlinks=false,
+    colorlinks=true,
+    urlcolor=black,
+    linkcolor=black,
     pdfborder={0 0 0}
 }
 
 % =========================================================
-% PAGE SETUP
+% SECTION STYLE
 % =========================================================
-\pagestyle{empty}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
 
-% =========================================================
-% SECTION FORMAT
-% =========================================================
 \titleformat{\section}
-    {\large\bfseries}
+    {\normalsize\bfseries}
     {}{0em}
-    {}
-    [\vspace{2pt}\hrule height 0.6pt]
+    {}[\vspace{1pt}\hrule height 1.5pt]
 
 \titlespacing*{\section}
     {0pt}
-    {9pt}
-    {5pt}
+    {8pt}
+    {4pt}
 
 % =========================================================
-% TABLE COLUMN SETUP
+% DATE COLUMN
 % =========================================================
-\newlength{\datecolwidth}
-\setlength{\datecolwidth}{1.35in}
+
+\newlength{\datewidth}
+\setlength{\datewidth}{1.35in}
 
 % =========================================================
 % DOCUMENT
 % =========================================================
+
 \begin{document}
 
 % =========================================================
 % HEADER
 % =========================================================
+
 \begin{center}
 
-    {\LARGE\bfseries Alex Kumar}
-
-    \vspace{4pt}
-
-    +91 XXXXX XXXXX
-    \quad $\cdot$ \quad
-    \href{mailto:alex.kumar@example.com}{alex.kumar@example.com}
-
-\end{center}
+{\fontsize{20}{22}\selectfont
+\bfseries YOUR NAME}
 
 \vspace{2pt}
 
-% =========================================================
-% CAREER OBJECTIVE
-% =========================================================
-\section*{Career Objective}
+{\small
+\faMapMarker\hspace{0.3em}
+YOUR ADDRESS, YOUR CITY,
+YOUR STATE, YOUR COUNTRY}
 
-Passionate Electronics and Communication Engineering undergraduate
-with hands-on experience in embedded systems, IoT, and AI-based
-solutions. Seeking an opportunity to apply my skills in ESP32
-development, sensor integration, and innovative prototyping to solve
-real-world engineering challenges while contributing effectively to
-a dynamic team.
+\vspace{1.5pt}
+
+{\small
+\faPhone\hspace{0.3em}
+YOUR PHONE NUMBER
+\quad $\cdot$ \quad
+\faEnvelope\hspace{0.3em}
+\href{mailto:your.email@example.com}
+{your.email@example.com}
+\quad $\cdot$ \quad
+\faGithub\hspace{0.3em}
+\href{https://github.com/YOUR-GITHUB}
+{github.com/YOUR-GITHUB}}
+
+\vspace{1.5pt}
+
+{\small
+\faLinkedin\hspace{0.3em}
+\href{https://www.linkedin.com/in/YOUR-LINKEDIN}
+{linkedin.com/in/YOUR-LINKEDIN}}
+
+\end{center}
 
 % =========================================================
-% EDUCATION
+% EXPERIENCE
 % =========================================================
+
+\section*{Experience}
+
+\begin{tabularx}{\textwidth}{
+@{}p{\datewidth}@{\hspace{0.35em}}X@{}
+}
+
+YOUR DATE -- PRESENT
+&
+\textbf{YOUR JOB TITLE}
+\\[1.5pt]
+
+&
+\textbf{YOUR COMPANY NAME}
+\hfill
+\textbf{YOUR CITY, COUNTRY}
+
+\end{tabularx}
+
+\begin{itemize}[
+    label=\(\triangleright\),
+    leftmargin=\dimexpr\datewidth+1.55em\relax,
+    labelsep=0.3em,
+    itemsep=3.2pt,
+    topsep=1.5pt,
+    parsep=0pt,
+    partopsep=0pt
+]
+
+\item YOUR EXPERIENCE CONTENT
+
+\item YOUR EXPERIENCE CONTENT
+
+\item YOUR EXPERIENCE CONTENT
+
+\item YOUR EXPERIENCE CONTENT
+
+\item YOUR EXPERIENCE CONTENT
+
+\item \textbf{Tech Stack:}
+YOUR TECHNOLOGY 1,
+YOUR TECHNOLOGY 2,
+YOUR TECHNOLOGY 3,
+YOUR TECHNOLOGY 4,
+YOUR TECHNOLOGY 5
+
+\end{itemize}
+
+% =========================================================
+% EDUCATIONAL QUALIFICATION
+% =========================================================
+
 \section*{Educational Qualification}
 
 \begin{tabularx}{\textwidth}{
-    @{}
-    >{\raggedright\arraybackslash}p{\datecolwidth}
-    @{\hspace{1em}}
-    >{\raggedright\arraybackslash}X
-    @{}
+@{}p{\datewidth}@{\hspace{0.35em}}X@{}
 }
 
-Nov 2022 -- May 2026
+YOUR DATE -- YOUR DATE
 &
-\textbf{Bachelors in Electronics Communication and Engineering}
+\textbf{YOUR DEGREE / PROGRAM}
 \hfill
-\textbf{Chennai}
-\\
+\textbf{YOUR CITY, COUNTRY}
+\\[-1pt]
 
 &
-Example Institute of Technology
-\\[5pt]
+YOUR UNIVERSITY / INSTITUTION
+\\[3pt]
 
-Jun 2021 -- Apr 2022
+YOUR DATE -- YOUR DATE
 &
-\textbf{Higher Secondary Certificate}
+\textbf{YOUR HIGHER SECONDARY QUALIFICATION}
 \hfill
-\textbf{Chennai}
-\\
+\textbf{YOUR CITY, COUNTRY}
+\\[-1pt]
 
 &
-Example Public School
-\\[5pt]
+YOUR SCHOOL / INSTITUTION
+\\[3pt]
 
-Jun 2019 -- Apr 2020
+YOUR DATE -- YOUR DATE
 &
-\textbf{Secondary School Leaving Certificate}
+\textbf{YOUR SECONDARY QUALIFICATION}
 \hfill
-\textbf{Chennai}
-\\
+\textbf{YOUR CITY, COUNTRY}
+\\[-1pt]
 
 &
-Example Public School
+YOUR SCHOOL / INSTITUTION
 
 \end{tabularx}
 
 % =========================================================
-% INTERNSHIP
+% RESEARCH PROJECTS
 % =========================================================
-\section*{Internship}
+
+\section*{Research Projects}
+
+% =========================================================
+% PROJECT 1
+% =========================================================
 
 \begin{tabularx}{\textwidth}{
-    @{}
-    >{\raggedright\arraybackslash}p{\datecolwidth}
-    @{\hspace{1em}}
-    >{\raggedright\arraybackslash}X
-    @{}
+@{}p{\datewidth}@{\hspace{0.35em}}X@{}
 }
 
-Jan 2026 -- Mar 2026
+YOUR DATE -- YOUR DATE
 &
-\textbf{Example Manufacturing Company -- Production Trainee}
-\hfill
-\textbf{Chennai}
-\\
-
-&
-Assisted in shop floor operations by analyzing production issues,
-supporting process control and maintenance activities, and ensuring
-adherence to quality, safety, and regulatory standards.
+\textbf{YOUR PROJECT 1}
 
 \end{tabularx}
 
+\begin{itemize}[
+    label=\(\triangleright\),
+    leftmargin=\dimexpr\datewidth+1.55em\relax,
+    labelsep=0.3em,
+    itemsep=3.2pt,
+    topsep=1.5pt,
+    parsep=0pt,
+    partopsep=0pt
+]
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item \textbf{Tech Stack:}
+YOUR TECHNOLOGY 1,
+YOUR TECHNOLOGY 2,
+YOUR TECHNOLOGY 3,
+YOUR TECHNOLOGY 4,
+YOUR TECHNOLOGY 5
+
+\end{itemize}
+
 % =========================================================
-% PROJECTS
+% PROJECT 2
 % =========================================================
-\section*{Projects}
+
+\vspace{5pt}
 
 \begin{tabularx}{\textwidth}{
-    @{}
-    >{\raggedright\arraybackslash}p{\datecolwidth}
-    @{\hspace{1em}}
-    >{\raggedright\arraybackslash}X
-    @{}
+@{}p{\datewidth}@{\hspace{0.35em}}X@{}
 }
 
-Nov 2025 -- Dec 2025
+YOUR DATE -- YOUR DATE
 &
-\textbf{Smart Wheelchair Tracking System}
-\\
-
-&
-Capstone project focused on smart wheelchair tracking.
-Developed a BLE-based indoor wheelchair tracking system using
-ESP32 microcontrollers. Implemented RSSI-based distance estimation
-with BLE beacons for accurate real-time location monitoring.
-Integrated a Flutter application with Firebase backend.
-
-\\[7pt]
-
-Nov 2024 -- Dec 2024
-&
-\textbf{Safe Sight}
-\\
-
-&
-AI-powered home security system tailored for visually impaired
-individuals. Developed a smart home security solution integrating
-ESP32-CAM, motion detection sensors, and voice alert systems to
-provide real-time safety notifications.
-
-\\[7pt]
-
-Apr 2025 -- May 2025
-&
-\textbf{Biocomposite 3D Printing Filament}
-\\
-
-&
-Created sustainable 3D printing filament using banana peduncle
-fiber combined with PLA. Implemented eco-friendly material
-processing and conducted testing to address sustainability
-challenges in additive manufacturing.
+\textbf{YOUR PROJECT 2}
 
 \end{tabularx}
+
+\begin{itemize}[
+    label=\(\triangleright\),
+    leftmargin=\dimexpr\datewidth+1.55em\relax,
+    labelsep=0.3em,
+    itemsep=3.2pt,
+    topsep=1.5pt,
+    parsep=0pt,
+    partopsep=0pt
+]
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item \textbf{Tech Stack:}
+YOUR TECHNOLOGY 1,
+YOUR TECHNOLOGY 2,
+YOUR TECHNOLOGY 3,
+YOUR TECHNOLOGY 4,
+YOUR TECHNOLOGY 5
+
+\end{itemize}
+
+% =========================================================
+% PAGE 2
+% =========================================================
+
+\clearpage
+
+% =========================================================
+% PROJECT 3
+% =========================================================
+
+\begin{tabularx}{\textwidth}{
+@{}p{\datewidth}@{\hspace{0.35em}}X@{}
+}
+
+YOUR DATE -- YOUR DATE
+&
+\textbf{YOUR PROJECT 3}
+
+\end{tabularx}
+
+\begin{itemize}[
+    label=\(\triangleright\),
+    leftmargin=\dimexpr\datewidth+1.55em\relax,
+    labelsep=0.3em,
+    itemsep=3.2pt,
+    topsep=1.5pt,
+    parsep=0pt,
+    partopsep=0pt
+]
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item \textbf{Tech Stack:}
+YOUR TECHNOLOGY 1,
+YOUR TECHNOLOGY 2,
+YOUR TECHNOLOGY 3,
+YOUR TECHNOLOGY 4
+
+\item \textbf{Communication:}
+YOUR COMMUNICATION TECHNOLOGY 1,
+YOUR COMMUNICATION TECHNOLOGY 2,
+YOUR COMMUNICATION TECHNOLOGY 3
+
+\end{itemize}
+
+% =========================================================
+% PROJECT 4
+% =========================================================
+
+\vspace{5pt}
+
+\begin{tabularx}{\textwidth}{
+@{}p{\datewidth}@{\hspace{0.35em}}X@{}
+}
+
+YOUR DATE
+&
+\textbf{YOUR PROJECT 4}
+\hfill
+\href{https://github.com/YOUR-GITHUB/YOUR-REPOSITORY}
+{\faGithub}
+
+\end{tabularx}
+
+\begin{itemize}[
+    label=\(\triangleright\),
+    leftmargin=\dimexpr\datewidth+1.55em\relax,
+    labelsep=0.3em,
+    itemsep=3.2pt,
+    topsep=1.5pt,
+    parsep=0pt,
+    partopsep=0pt
+]
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item YOUR PROJECT CONTENT
+
+\item \textbf{Tech Stack:}
+YOUR TECHNOLOGY 1,
+YOUR TECHNOLOGY 2,
+YOUR TECHNOLOGY 3,
+YOUR TECHNOLOGY 4,
+YOUR TECHNOLOGY 5
+
+\end{itemize}
 
 % =========================================================
 % KEY ACHIEVEMENTS
 % =========================================================
+
+\vspace{4pt}
+
 \section*{Key Achievements}
 
 \begin{tabularx}{\textwidth}{
-    @{}
-    >{\raggedright\arraybackslash}p{\datecolwidth}
-    @{\hspace{1em}}
-    >{\raggedright\arraybackslash}X
-    @{}
+@{}p{\datewidth}@{\hspace{0.35em}}X@{}
 }
 
-Mar 2025
+YOUR DATE
 &
-\textbf{ICECAA 2025} -- Presented research paper titled
-``Smart Wheelchair Monitoring: Location and Occupancy Detection
-for Improved Hospital Access'' at the 3rd International Conference
-on Edge Computing and Applications.
+\textbf{YOUR ACHIEVEMENT 1}
+\hfill
+\href{https://YOUR-LINK.com}
+{\scriptsize YOUR LINK TEXT}
 
-\\[5pt]
+\\[-1pt]
 
-Mar 2024
 &
-Achieved \textbf{3rd Place} in FRAMES '24 technical competition.
+YOUR ACHIEVEMENT CONTENT.
+YOUR ACHIEVEMENT DESCRIPTION.
+YOUR ACHIEVEMENT DETAILS.
+
+\\[27pt]
+
+YOUR DATE
+&
+Achieved \textbf{YOUR ACHIEVEMENT 2} in
+YOUR EVENT / COMPETITION / ACTIVITY.
 
 \end{tabularx}
 
 % =========================================================
-% SKILLS
+% TECHNICAL SKILLS
 % =========================================================
-\section*{Skills}
+
+\vspace{4pt}
+
+\section*{Technical Skills}
 
 \begin{tabularx}{\textwidth}{
-    @{}
-    >{\raggedright\arraybackslash}p{\datecolwidth}
-    @{\hspace{1em}}
-    >{\raggedright\arraybackslash}X
-    @{}
+@{}>{\raggedright\arraybackslash}p{1.72in}
+@{\hspace{0.10in}}X@{}
 }
 
-\textbf{Technical Skills}
+\textbf{Technical Skills 1}
 &
-IoT, Embedded C, PCB Design, I2C, Multisim, Verilog, UART,
-3D Printing, EDA, BLE
+YOUR LANGUAGE 1,
+YOUR LANGUAGE 2,
+YOUR LANGUAGE 3,
+YOUR LANGUAGE 4
 
-\\[4pt]
+\\[7pt]
 
-\textbf{Soft Skills}
+\textbf{Technical Skills 2}
 &
-Leadership and Teamwork, Communication, Public Speaking,
-Optimistic, Adaptable
+YOUR HARDWARE 1,
+YOUR HARDWARE 2,
+YOUR PROTOCOL 1,
+YOUR PROTOCOL 2,
+YOUR PROTOCOL 3
+
+\\[20pt]
+
+\textbf{Technical Skills 3}
+&
+YOUR SENSOR 1,
+YOUR SENSOR 2,
+YOUR IOT TECHNOLOGY 1,
+YOUR IOT TECHNOLOGY 2
+
+\\[20pt]
+
+\textbf{Technical Skills 4}
+&
+YOUR COMPUTER VISION TOOL 1,
+YOUR COMPUTER VISION TOOL 2,
+YOUR AI TECHNOLOGY 1,
+YOUR AI TECHNOLOGY 2
+
+\\[20pt]
+
+\textbf{Technical Skills 5}
+&
+YOUR TOOL 1,
+YOUR TOOL 2,
+YOUR TOOL 3,
+YOUR TOOL 4
+
+\\[7pt]
+
+\textbf{Technical Skills 6}
+&
+YOUR IDE 1,
+YOUR IDE 2,
+YOUR IDE 3
 
 \end{tabularx}
 
 % =========================================================
 % LANGUAGES
 % =========================================================
-\section*{Languages Known}
 
-german, English, Hindi, Tamil
+\vspace{4pt}
+
+\section*{Languages}
+
+\begin{tabularx}{\textwidth}{
+@{}p{1.95in}@{\hspace{0.12in}}X@{}
+}
+
+\textbf{YOUR LANGUAGE 1: YOUR LEVEL}
+&
+\hfill YOUR INSTITUTION / CERTIFICATION
+
+\\[2.5pt]
+
+\textbf{YOUR LANGUAGE 2: YOUR LEVEL}
+&
+\hfill YOUR INSTITUTION / COURSE
+
+\\[2.5pt]
+
+\textbf{YOUR LANGUAGE 3: YOUR LEVEL}
+&
+
+\\[2.5pt]
+
+\textbf{YOUR LANGUAGE 4: YOUR LEVEL}
+&
+
+\end{tabularx}
+
+% =========================================================
+% REFERENCE
+% =========================================================
+
+\vspace{15pt}
+
+{\normalsize\bfseries Reference}
+
+\vspace{-5pt}
+
+\noindent
+\rule{1.6in}{1.5pt}
+
+\vspace{2pt}
+
+YOUR REFERENCE CONTENT
+
+% =========================================================
+% SIGNATURE
+% =========================================================
+
+\vspace{45pt}
+
+\noindent
+\rule{1.75in}{0.5pt}
+
+\vspace{2pt}
+
+\textbf{YOUR NAME}
 
 % =========================================================
 % END
